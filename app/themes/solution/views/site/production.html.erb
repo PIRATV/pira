@@ -1,0 +1,31 @@
+<% content_for :production do %>
+    <%= stylesheet_link_tag 'solution/production', 'data-turbolinks-track' => true %>
+<% end %>
+
+<% content_for :title, "Продукция - #{@category}" %>
+
+<div class="production">
+
+  <br id="led_screens"/>
+  <br id="advertising_design"/>
+  <br id="diy"/>
+  <br id="street_furniture"/>
+
+  <% ['Светодиодные_экраны', 'Рекламные_конструкции', 'Системы-конструкторы', 'Уличная_мебель'].each do |category| %>
+      <% url = create_url(t('Production'), category) %>
+      <h3>
+        <%= link_to category.sub('_', ' '), url, class: "hover-effect#{' active' if @category == category}" %>
+      </h3>
+  <% end %>
+
+  <% @productions.each do |url, arr| %>
+      <div<%= ' class=current' if @category == url %>>
+        <ul class="production_item">
+          <% arr[:types].each do |action, title| %>
+              <li><%= link_to title, create_url(t('Production'), url, action) %></li>
+          <% end %>
+        </ul>
+      </div>
+  <% end %>
+
+</div>

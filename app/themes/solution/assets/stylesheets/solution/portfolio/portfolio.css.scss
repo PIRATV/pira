@@ -1,0 +1,27 @@
+.album_image {
+  img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+.pagination {
+  ul, li {
+    list-style-type: none;
+  }
+  li {
+    display: inline;
+  }
+  display: block;
+  text-align: center;
+  margin: 15px auto;
+  font-size: 15px;
+}
+
+.portfolio_image {
+  margin: 30px auto;
+  width: 980px;
+  a {
+    display: inline-block;
+  }
+}

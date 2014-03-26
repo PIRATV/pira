@@ -1,0 +1,151 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+ru:
+  Log in: 'Вход на сайт'
+  Login: 'Войти'
+  'Log out': 'Выход'
+  Register: 'Регистрация'
+  username: 'Логин'
+  password: 'Пароль'
+  Top: '▲'
+  Back: 'Вернуться назад'
+  'Scroll Back to Top': 'Вернуться наверх'
+  Home: 'Главная'
+  Contact: 'Контакты'
+  Production: 'Продукция'
+  'Contact Us': 'Написать нам'
+  Services: 'Услуги'
+  Job: 'Вакансии'
+  Portfolio: 'Портфолио'
+  'Download price': 'Скачать прайс'
+  #links
+  services: 'Услуги'
+  contact: 'Контакты'
+  work: 'Вакансии'
+  portfolio: 'Портфолио'
+  production: 'Продукция'
+  "The page you were looking for doesn't exist": 'Страница не найдена'
+  'You may have mistyped the address or the page may have moved': 'Возможно, вы ошиблись в адресе, или страница была перемещена'
+  'If you are sure that the address is spelled correctly, contact the board administrator': 'Если вы уверены, что адрес написан правильно, свяжитесь с администратором'
+  "The page you were looking for doesn't exist (404 Not Found)": 'Запрашиваемая страница не найдена (404 Not Found)'
+
+  will_paginate:
+    previous_label: '«'
+    next_label: '»'
+    page_gap: "&hellip;"
+
+  datetime:
+    distance_in_words:
+      about_x_hours: '%{count} часов'
+  admin:
+    table_headers:
+      model_name: 'Имя модели'
+      last_used: 'Последнее изменение'
+      records: 'Всего записей'
+    home:
+      name: 'Главная'
+    form:
+      cancel: 'Отмена'
+      optional: 'Необязательный'
+      char_length_up_to: 'Максимальное число символов'
+      char_length_of: 'Число символов должно быть в диапазоне'
+      save: 'Сохранить'
+      save_and_add_another: 'Сохранить и добавить новый'
+      save_and_edit: 'Сохранить и продолжить редактирование'
+      basic_info: 'Основное'
+      required: 'Обязательное'
+      optional: 'Необязательное'
+      one_char: 'символ.'
+      many_chars: 'символов или меньше.'
+      chosen: 'Выбрано %{name}'
+      select_choice: 'Выберите нужное и кликните'
+      chose_all: 'Выбрать все'
+      clear_all: 'Очистить'
+      are_you_sure_you_want_to_delete_the_object: 'Вы уверены, что хотите удалить эту запись?'
+      all_of_the_following_related_items_will_be_deleted: 'Все связанные записи будут также удалены'
+      confirmation: 'Подтвердить'
+    pagination:
+      previous: '«'
+      next: '»'
+      truncate: 'Сбросить'
+    misc:
+      navigation: 'Навигация'
+      ago: 'назад'
+      add_filter: 'Добавить фильтр'
+      bulk_menu_title: 'Bulk'
+      refresh: 'Обновить'
+      filter: 'Фильтр'
+    export:
+      select: 'Выбор полей'
+      select_all_fields: 'Выбрать все поля'
+      options_for: 'Дополнительные опции'
+      confirmation: 'Экспорт в %{name}'
+      csv:
+        encoding_to: 'Кодировка CSV'
+        encoding_to_help: 'Кодировка выходных данных CSV'
+        skip_header: 'Пропустить заголовок'
+        skip_header_help: ''
+        col_sep: 'Разделитель'
+        default_col_sep: 'Разделитель по умолчанию'
+        col_sep_help: 'Разделитель, используемый между данными'
+    actions:
+      index:
+        title: 'Модель %{model_label}'
+        breadcrumb: 'Модель %{model_label}'
+        menu: 'Обзор %{model_label}'
+      new:
+        breadcrumb: 'Добавление записи в %{model_label}'
+        menu: 'Вставить'
+        title: 'Вставка записи'
+        done: 'сохранение записи'
+      show:
+        menu: 'Просмотр'
+        breadcrumb: 'Просмотр записи'
+        title: 'Просмотр записи'
+      edit:
+        menu: 'Изменить'
+        breadcrumb: 'Редактирование записи'
+      delete:
+        menu: 'Удалить'
+        title: 'Удаление записи'
+        breadcrumb: 'Удаление записи'
+      export:
+        menu: 'Экспортировать'
+        link: 'Экспорт'
+        bulk_link: 'Экспорт Bulk'
+        breadcrumb: 'Экспорт %{model_label}'
+        title: 'Экспорт модели %{model_label}'
+      bulk_delete:
+        bulk_link: 'Удалить Bulk'
+      dashboard:
+        breadcrumb: 'Административная панель'
+        menu: 'Административная панель'
+        title: 'Управление сайтом'
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: 'Поле %{attribute} обязательно для заполнения'
+            password:
+              blank: 'Поле %{attribute} обязательно для заполнения'

@@ -1,0 +1,5 @@
+<%= form.label :login %><br />
+<%= form.text_field :login %><br />
+<br />
+<%= form.label :password_salt, form.object.new_record? ? nil : 'Change password' %><br />
+<%= form.password_field :password_salt %><br />

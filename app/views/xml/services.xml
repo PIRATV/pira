@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+
+  <service>
+    <image>frezer.jpg</image>
+    <title>Фрезерно-гравировальные работы</title>
+    <url>Работа_на_фрезере</url>
+    <price></price>
+    <lists>
+      <list>Фрезеровка</list>
+      <list>Фаска</list>
+      <list>Гравировка</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>screen.jpg</image>
+    <title>Технологии XXI века</title>
+    <url>Интерактивная_пленка</url>
+    <price></price>
+    <lists>
+      <list>Интерактивная пленка обратной проекции</list>
+      <list>Сенсорная интерактивная пленка обратной проекции</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>led.jpg</image>
+    <title>Видеоэкраны и бегущие строки</title>
+    <url>Видеоэкраны</url>
+    <price></price>
+    <lists>
+      <list>Светодиодные табло</list>
+      <list>Бегущие строки (полноцвет, монохром)</list>
+      <list>Видеоэкраны с высоким разрешением для использования как на улице, так и в помещениях</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>site.jpg</image>
+    <title>Разработка сайтов</title>
+    <url>Сайты</url>
+    <price></price>
+    <lists>
+      <list>Сайт-визитка</list>
+      <list>Базовый сайт</list>
+      <list>Продвинутый</list>
+      <list>Бизнес-сайт</list>
+      <list>Интернет-магазин</list>
+      <list>Эксклюзивный сайт</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>tram.jpg</image>
+    <title>Брендирование общественного транспорта</title>
+    <url></url>
+    <price></price>
+    <lists>
+      <list>Трамваи</list>
+      <list>Маршрутные такси</list>
+      <list>Автомобили</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>video.jpg</image>
+    <title>Видео реклама</title>
+    <url></url>
+    <price></price>
+    <lists>
+      <list>Реклама на телевидении</list>
+      <list>Видеореклама в общественном транспорте</list>
+      <list>Реклама на радио</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>advert.jpg</image>
+    <title>Наружная реклама</title>
+    <url></url>
+    <price>/diler_price_PIRA.pdf</price>
+    <lists>
+      <list>Световые коробы</list>
+      <list>Объемные буквы</list>
+      <list>Штендеры</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>polygraphy.jpg</image>
+    <title>Полиграфия</title>
+    <url></url>
+    <price></price>
+    <lists>
+      <list>Широкоформатная печать</list>
+      <list>Баннеры</list>
+      <list>Интерьерная печать</list>
+      <list>Визитки</list>
+      <list>Календари</list>
+      <list>Флаеры</list>
+    </lists>
+  </service>
+
+</services>

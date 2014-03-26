@@ -1,0 +1,17 @@
+<% content_for :title, 'Портфолио' %>
+<% if @albums.empty? %>
+    В настоящий момент сервер недоступен. Приносим извинения за причиненные неудобства
+<% else %>
+    <% @albums.each do |album| %>
+        <% url = album.album_url.empty? ? album.album_id : album.album_url %>
+        <%= link_to create_url('Портфолио', url) do %>
+            <h3><%= album.album_name %></h3>
+            <% if not album.album_image.empty? and File.exist?("#{Rails.root}/public/images/#{album.album_image}") %>
+                <div class="album_image">
+                  <%= image_tag(album.album_image, title: album.album_title, alt: album.album_title) %>
+                </div>
+            <% end %>
+            <%= album.album_title %>
+        <% end %>
+    <% end %>
+<% end %>

@@ -1,0 +1,12 @@
+<% content_for :production do %>
+    <%= stylesheet_link_tag 'solution/production', 'data-turbolinks-track' => true %>
+<% end %>
+
+<% content_for :title, "Продукция - #{@title} | #{@action}" %>
+
+<div id="content">
+  <h1><%= @action %></h1>
+
+  <%= render template: "/production/#{@category}/#{params[:type]}" %>
+
+</div>

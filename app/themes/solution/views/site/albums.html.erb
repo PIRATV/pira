@@ -1,0 +1,34 @@
+<% content_for :title, 'Портфолио' %>
+
+<% if @albums.empty? %>
+    В настоящий момент сервер недоступен. Приносим извинения за причиненные неудобства
+<% else %>
+    <div class="container">
+      <div class="row">
+        <% i = 0 %>
+        <% @albums.each do |album| %>
+            <div class="col-md-4">
+              <% url = album.album_url.empty? ? album.album_id : album.album_url %>
+              <p>
+                <%= link_to create_url(t('Portfolio'), url) do %>
+                  <h3><%= album.album_name %></h3>
+                  <% if not album.album_image.empty? and img_exists?(album.album_image) %>
+                      <div class="album_image">
+                        <%= image_tag(album.album_image, title: album.album_title, alt: album.album_title) %>
+                      </div>
+                  <% end %>
+                  <%= album.album_title %>
+                  <% i += 1; if i == 3 %>
+                      <% i = 0 %>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                  <% end %>
+              <% end %>
+              </p>
+              </div>
+        <% end %>
+        </div>
+        </div>
+<% end %>

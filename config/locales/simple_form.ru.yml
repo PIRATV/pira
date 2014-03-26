@@ -1,0 +1,29 @@
+ru:
+  'Wrong email format': 'Неверный формат e-mail'
+  'Please check your entries': 'Проверьте введенные данные'
+  'Email successfully sent': 'Письмо успешно отправлено'
+  submit: 'Отправить сообщение'
+  simple_form:
+    labels:
+      defaults:
+        name: 'Имя'
+        subject: 'Тема'
+        email: 'E-mail'
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+        phone: "Мобильный телефон"
+        body: "Сообщение"
+  helpers:
+    submit:
+      user:
+        create: "Стать участником!"
+        update: "Сохранить изменения"
+  activemodel:
+    errors:
+      models:
+        message:
+          attributes:
+            name:
+              blank: 'Введите имя'
+            email:
+              blank: 'Введите адрес e-mail'

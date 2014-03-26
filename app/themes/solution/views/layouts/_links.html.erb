@@ -1,0 +1,23 @@
+<div class="topHeaderSection">
+  <div class="header">
+    <div class="container">
+      <div class="navbar-header">
+        <%= link_to root_path, class: 'navbar-brand', title: app_name do %>
+            <%= image_tag 'logo.png', title: app_name, alt: app_name %>
+        <% end %>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li<%= check_active_page('index') %>><%= link_to t('Home'), root_path %></li>
+          <li<%= check_active_page('production') %>><%= link_to t('Production'), create_url(t('production')) %></li>
+          <li<%= check_active_page('contact') %>><%= link_to t('Contact'), create_url(t('contact')) %></li>
+          <li<%= check_active_page('work') %>><%= link_to t('Job'), create_url(t('work')) %></li>
+          <li<%= check_active_page('albums') %>><%= link_to t('Portfolio'), create_url(t('portfolio')) %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

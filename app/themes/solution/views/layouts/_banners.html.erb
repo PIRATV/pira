@@ -1,0 +1,26 @@
+<div class="bannerSection">
+
+  <div class="slider-inner">
+    <div id="da-slider" class="da-slider">
+      <% Hash.from_xml(File.read("#{theme_path}views/xml/banners.xml"))['banners']['banner'].each do |banner| %>
+          <div class="da-slide">
+            <h2><%= bbcodes(banner['title']).html_safe %></h2>
+            <p>
+              <%= bbcodes(banner['text']).html_safe %>
+            </p>
+            <div class="da-img">
+              <%= link_to image_path("#{banner['image']}"), rel: 'prettyPhoto' do %>
+                <%= image_tag image_path("#{banner['image']}"), style: 'max-height: 280px', alt: banner['title'].gsub(/[<\[]\/?[biupr]+?[>\]]/iu, '') %>
+              <% end %>
+            </div>
+          </div>
+      <% end %>
+      <nav class="da-arrows">
+        <span class="da-arrows-prev"></span>
+        <span class="da-arrows-next"></span>
+      </nav>
+    </div>
+    <%= render_breadcrumbs '' %>
+  </div>
+
+</div>

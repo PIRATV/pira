@@ -1,0 +1,20 @@
+<div class="col-md-4">
+  <%= image_tag image, alt: '', title: title, class: 'services' %>
+  <% unless url.nil? %>
+      <h3> <%= link_to title, create_url(url), class: 'hover-effect' %> </h3>
+  <% else %>
+      <h3> <%= title %> </h3>
+  <% end %>
+  <p>
+    <% unless lists.nil? %>
+      <ul>
+        <% lists['list'].each do |li| %>
+            <li><%= li %></li>
+        <% end %>
+      </ul>
+  <% end %>
+  <% unless price.nil? %>
+      <%= link_to 'Скачать прайс', price, class: 'hover-effect' %>
+  <% end %>
+  </p>
+</div>

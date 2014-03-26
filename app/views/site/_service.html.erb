@@ -1,0 +1,27 @@
+<div class="row row-spacer ">
+  <div class="span6">
+    <div class="span-space" >
+      <p style="text-align: center;">
+        <%= image_tag image, alt: '', title: title, class: 'services' %>
+      </p>
+    </div>
+  </div>
+  <div class="span6 responsive-center ">
+    <div class="span-space">
+      <h3><%= title %></h3>
+      <br>
+      <p>
+      <ul>
+        <% lists['list'].each do |li| %>
+            <li><%= li %></li>
+        <% end %>
+      </ul>
+      </p>
+      <% unless url.nil? %>
+        <a class="btn btn-large " href="<%= create_url url %>">Подробнее</a>
+      <% end; unless price.nil? %>
+          <a class="btn btn-large " href="<%= price %>">Скачать прайс</a>
+      <% end %>
+    </div>
+  </div>
+</div>

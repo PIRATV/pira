@@ -1,0 +1,17 @@
+<div class="row">
+  <%= render partial: 'site/about' %>
+  <div class="span5">
+    <h3 style="text-align: center">Обратная связь</h3>
+    <%= simple_form_for @message, url: '/contact/', html: {class: 'form-horizontal'} do |f| %>
+        <%= f.input :name %>
+        <%= f.input :subject %>
+        <%= f.input :email %>
+        <%= f.input :body, as: :text %>
+        <%= f.button :submit, t(:submit), style: 'margin: 0 auto;display: block' %>
+    <% end %>
+  </div>
+</div>
+<div class="comments"></div>
+<div style="border:5px groove #FCFCFC;width:930px;height:620px;margin: 0 auto">
+  <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=ugTomRZGimV2_WMqgimEKvLCFcVyO-Vg&width=930&height=620"></script>
+</div>

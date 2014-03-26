@@ -1,0 +1,41 @@
+<div class="highlightSection">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h4>Добро пожаловать на сайт Пятигорской Рекламно-Информационной Компании "ПИРА"</h4>
+        <em> С нами Ваш бизнес обретет новую жизнь! </em><br><br>
+        Адрес: г. Пятигорск, пр. Калинина, 68<br>
+        Телефон: 8 (928) - 3 - 194 - 194
+        </p>
+      </div>
+      <div class="col-md-4 align-right">
+        <%= link_to t('Contact'), create_url('contact'), class: 'btn btn-brand' %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container services-main">
+  <div class="row">
+    <%
+
+       document = Hash.from_xml File.read("#{theme_path}views/xml/services.xml")
+       i = 0
+       document['services']['service'].each do |info| %>
+        <%= render partial: '/site/service',
+                   locals: {
+                           image: info['image'], url: info['url'], title: info['title'], lists: info['lists'], price: info['price']
+                   }
+        %>
+        <% if (i += 1) == 3 %>
+            <% i = 0 %>
+            </div>
+            </div>
+            <div class="container services-main">
+              <div class="row">
+        <% end %>
+    <% end %>
+  </div>
+</div>
+<br>
