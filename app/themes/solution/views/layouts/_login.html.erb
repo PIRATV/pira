@@ -1,7 +1,16 @@
 <div class="top">
   <div class="container">
     <div class="row-fluid">
-
+      <% if current_user.present? %>
+          <ul class="phone-mail">
+            <li><i class="fa fa-envelope"></i><span><%= current_user.email %></span></li>
+          </ul>
+          <ul class="loginbar">
+            <li><%= link_to t('Administration'), '/administration/', class: 'login-btn' %></li>
+            <li class="devider">&nbsp;</li>
+            <li><%= link_to t('Log out'), create_url('logout'), class: 'login-btn' %></li>
+          </ul>
+      <% end %>
     </div>
   </div>
 </div>

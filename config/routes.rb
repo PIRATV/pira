@@ -1,5 +1,11 @@
 Pira::Application.routes.draw do
 
+  resources :user_sessions
+  resources :users, only: [:new, :create, :update, :destroy]
+
+  get 'login' => 'user_sessions#new', as: :login
+  match 'logout' => 'user_sessions#destroy', as: :logout, via: [:get, :post]
+
   get '/Продукция/:category',constraints:{
       category: /[-_%a-z0-9]+/iu
   },to: 'site#production'
@@ -7,11 +13,6 @@ Pira::Application.routes.draw do
   get '/Продукция/:category/:type',constraints:{
       category: /[-_%a-z0-9]+/iu
   },to: 'production#show'
-
-
-  resource :account, controller: 'users'
-  resources :users
-  resource :user_sessions
 
   mount Ckeditor::Engine => '/ckeditor'
   mount RailsAdmin::Engine => '/administration', as: 'rails_admin'

@@ -1,3 +1,13 @@
 class User < ActiveRecord::Base
-  acts_as_authentic
+  authenticates_with_sorcery!
+
+  validates :password, length: { minimum: 3 }
+  validates :password, confirmation: true
+  validates :password_confirmation, presence: true
+
+  validates :email, uniqueness: true
+
+  def admin?
+    self.email == 'piratv@inbox.ru'
+  end
 end

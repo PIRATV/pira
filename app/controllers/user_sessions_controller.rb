@@ -1,29 +1,21 @@
 class UserSessionsController < ApplicationController
-  before_filter :require_no_user, :only => [:new, :create]
-  before_filter :require_user, :only => :destroy
+  skip_before_filter :require_login, except: [:destroy]
 
   def new
-    @user_session = UserSession.new
+    @user = User.new
   end
 
   def create
-    @user_session = UserSession.new(user_params)
-    if @user_session.save
-      flash[:notice] = 'Login successful!'
-      redirect_back_or_default account_url
+    if @user = login(params[:email], params[:password])
+      redirect_back_or_to(root_path, notice: 'Вход в систему выполнен успешно')
     else
-      render action: :new
+      flash.now[:alert] = 'Ошибка входа'
+      render action: 'new'
     end
   end
 
   def destroy
-    current_user_session.destroy
-    flash[:notice] = 'Logout successful!'
-    redirect_back_or_default new_user_session_url
-  end
-
-  private
-  def user_params
-    params.require(:user_session).permit :login, :password, :remember_me
+    logout
+    redirect_to(root_path, notice: 'Выход из системы был успешно осуществлен')
   end
 end
