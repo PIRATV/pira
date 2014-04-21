@@ -2,11 +2,9 @@
     <%= stylesheet_link_tag 'solution/production', 'data-turbolinks-track' => true %>
 <% end %>
 
-<% content_for :title, "Продукция - #{@title} | #{@action}" %>
+<% content_for :title, "Продукция - #{params[:category]} | #{@category.category}" %>
 
 <div id="content">
-  <h1><%= @action %></h1>
-
-  <%= render template: "/production/#{@category}/#{params[:type]}" %>
-
+  <h1><%= @category.category %></h1>
+  <%= bbcode(@production.text).html_safe %>
 </div>

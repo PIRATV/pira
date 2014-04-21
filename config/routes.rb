@@ -11,7 +11,8 @@ Pira::Application.routes.draw do
   },to: 'site#production'
 
   get '/Продукция/:category/:type',constraints:{
-      category: /[-_%a-z0-9]+/iu
+      category: /[-_%a-z0-9]+/iu,
+      type: /[-_%a-z0-9]+/iu
   },to: 'production#show'
 
   mount Ckeditor::Engine => '/ckeditor'

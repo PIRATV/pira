@@ -18,14 +18,15 @@
       </h3>
   <% end %>
 
-  <% @productions.each do |url, arr| %>
-      <div<%= ' class=current' if @category == url %>>
-        <ul class="production_item">
-          <% arr[:types].each do |action, title| %>
-              <li><%= link_to title, create_url(t('Production'), url, action) %></li>
-          <% end %>
-        </ul>
+  <% {1=>'Светодиодные_экраны',2=>'Рекламные_конструкции',3=>'Системы-конструкторы',4=>'Уличная_мебель'}.each do |i, category| %>
+      <div<%= ' class=current' if category == @category %>>
+      <ul class="production_item">
+        <% @productions.each do |production| %>
+            <% next if production.parent_id != i %>
+            <li><%= link_to production.category, create_url(t('Production'), @category, production.category_url) %></li>
+        <% end %>
+      </ul>
       </div>
   <% end %>
 
-</div>
+  </div>

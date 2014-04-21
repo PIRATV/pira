@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  text: MyText
+  status: false
+  belongs_to: 
+
+two:
+  text: MyText
+  status: false
+  belongs_to: 

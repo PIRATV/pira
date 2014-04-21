@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140328061530) do
+ActiveRecord::Schema.define(version: 20140328122729) do
 
   create_table "albums", primary_key: "album_id", force: true do |t|
     t.string   "album_name",   default: ""
@@ -53,6 +53,22 @@ ActiveRecord::Schema.define(version: 20140328061530) do
 
   add_index "portfolios", ["album_id"], name: "index_portfolios_on_album_id", using: :btree
   add_index "portfolios", ["status"], name: "index_portfolios_on_status", using: :btree
+
+  create_table "production_categories", force: true do |t|
+    t.string   "category"
+    t.string   "category_url"
+    t.integer  "parent_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "productions", force: true do |t|
+    t.text     "text"
+    t.boolean  "status"
+    t.integer  "production_category_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",            null: false

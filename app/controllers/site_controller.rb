@@ -52,7 +52,7 @@ class SiteController < ApplicationController
   def production
     add_breadcrumb I18n.t('Production'), create_url(I18n.t 'Production')
 
-    @productions = ApplicationController.production
+    @productions = ProductionCategory.all
     @category = params[:category] || 'Светодиодные_экраны'
     add_breadcrumb(@category.sub '_', ' ')
   end
