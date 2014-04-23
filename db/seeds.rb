@@ -258,6 +258,3 @@ ProductionCategory.create!([
   {category: "Велопарковка с лайтбоксом", category_url: "Велопарковка_с_лайтбоксом", parent_id: 4},
   {category: "Беседка рекламная", category_url: "Беседка_рекламная", parent_id: 4}
 ])
-User.create!([
-  {email: "piratv@inbox.ru", crypted_password: "$2a$10$mv4UcY8JQ2zlPeHinwq3JenQlZhJSB73osS.GccvBxsMRLxXgovbm", salt: "w49mxaNa5qbWGkLYAmkC"}
-])
