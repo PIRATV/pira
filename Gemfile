@@ -52,5 +52,7 @@ gem 'paperclip', '3.4.2'
 # Use unicorn as the app server
 gem 'unicorn'
 
+gem 'nokogiri', '1.5.5'
+
 gem 'rails_12factor', group: :production
 ruby '2.1.0'
