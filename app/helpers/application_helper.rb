@@ -16,7 +16,7 @@ module ApplicationHelper
   def create_url url=nil
     return home_url if url.nil? or url.empty?
     url = home_url + url unless url.starts_with?(home_url)
-    url = url + url_suffix unless url.ends_with?(url_suffix)
+    url += url_suffix unless url.ends_with?(url_suffix)
     url
   end
   def create_url *url
