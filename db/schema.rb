@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140328122729) do
+ActiveRecord::Schema.define(version: 20140424091845) do
 
   create_table "albums", primary_key: "album_id", force: true do |t|
     t.string   "album_name",   default: ""
@@ -49,6 +49,8 @@ ActiveRecord::Schema.define(version: 20140328122729) do
     t.boolean  "status",               default: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "width",      limit: 2
+    t.integer  "height",     limit: 2
   end
 
   add_index "portfolios", ["album_id"], name: "index_portfolios_on_album_id", using: :btree
