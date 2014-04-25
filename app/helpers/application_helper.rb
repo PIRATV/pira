@@ -32,7 +32,7 @@ module ApplicationHelper
   end
 
   def theme_path
-    "#{Rails.root}/app/themes/#{params[:theme]}/"
+    "#{Rails.root}/app/themes/solution/"
   end
 
   def img_exists? image

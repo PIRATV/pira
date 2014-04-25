@@ -11,4 +11,5 @@
 // about supported directives.
 //
 //= require_self
+//= require jquery.infinitescroll
 //= require_tree .

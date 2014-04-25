@@ -1,33 +1,35 @@
 <% i = 0; content_for :title, 'Портфолио - ' + @album.album_name %>
 <% if @portfolios.empty? %>
+
     Фотографий в данном альбоме еще не добавили..
+
 <% else %>
+
     <h2 style="text-align: center;text-transform: uppercase"><%= @album.album_name %></h2>
+
     <% content_for :portfolio do %>
         <%= javascript_include_tag 'solution/portfolio/application', 'data-turbolinks-track' => true %>
         <%= stylesheet_link_tag 'solution/portfolio/application', 'data-turbolinks-track' => true %>
     <% end %>
-    <%= will_paginate @portfolios %>
-    <div class="portfolio_image">
+
+    <div id="portfolios" class="portfolio_image">
+
       <% @portfolios.each do |unit| %>
-          <% url = unit.photo_url.starts_with?('http://') ? unit.photo_url : 'portfolio/' + unit.photo_url %>
-          <% if img_exists?(url) %>
-              <% link_url = unit.video_url.nil? ? image_path(url) : unit.video_url %>
-              <span class="image">
-                <%= link_to link_url, rel: 'prettyPhoto[gallery]', title: unit.title do %>
-                  <%= image_tag url, alt: unit.title, width: "#{unit.width}px", height: "#{unit.height}px" %>
-              <% end %>
-              </span>
-          <% end %>
+          <%= render 'portfolio', unit: unit %>
           <% i = 1 if i.zero? %>
       <% end %>
+
       <% if i.zero? %>
           Фотографий в данном альбоме еще не добавили..
       <% end %>
-      <div class="clearfix"></div>
+
     </div>
-    <%= will_paginate @portfolios %>
+    <div class="clearfix"></div>
+
+    <%= paginate @portfolios %>
+
 <% end %>
+
 <div class="link_back">
   <%= link_to t('Back'), create_url(albums_path) %>
 </div>

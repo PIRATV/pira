@@ -1,0 +1,17 @@
+<div class="portfolio">
+
+  <% url = unit.photo_url.starts_with?('http://') ? unit.photo_url : 'portfolio/' + unit.photo_url %>
+
+  <% if img_exists?(url) %>
+
+    <% link_url = unit.video_url.nil? ? image_path(url) : unit.video_url %>
+
+    <span class="image">
+      <%= link_to link_url, rel: 'prettyPhoto[gallery]', title: unit.title do %>
+        <%= image_tag url, alt: unit.title, width: "#{unit.width}px", height: "#{unit.height}px" %>
+      <% end %>
+    </span>
+
+  <% end %>
+
+</div>

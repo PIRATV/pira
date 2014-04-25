@@ -5,7 +5,8 @@ gem 'rails', '4.0.2'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'faker', '1.1.2'
 
-gem 'will_paginate', '3.0.4'
+#gem 'will_paginate', '3.0.4'
+gem 'kaminari'
 gem 'breadcrumbs_on_rails'
 gem 'themes_on_rails'
 
@@ -31,7 +32,7 @@ gem 'pony'
 
 gem 'seed_dump'
 
-gem 'mini_magick'
+#gem 'mini_magick'
 
 gem 'jquery-turbolinks'
 gem 'turbolinks'

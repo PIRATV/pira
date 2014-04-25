@@ -29,7 +29,7 @@ class ApplicationController < ActionController::Base
   private
 
   def theme_resolver
-    params[:theme] ||= 'solution'
+    'solution'
   end
 
   def store_location
