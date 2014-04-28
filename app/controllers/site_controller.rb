@@ -43,10 +43,6 @@ class SiteController < ApplicationController
     #).paginate(
     #    page: params[:page], per_page: 15
     #)
-    respond_to do |format|
-      format.html
-      format.js
-    end
 
     add_breadcrumb I18n.t('Portfolio'), create_url(I18n.t 'Portfolio')
     add_breadcrumb @album.album_name, create_url(@album.album_url)
