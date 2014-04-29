@@ -1,0 +1,25 @@
+<% content_for :title, 'Интерактивная пленка обратной проекции' %>
+<div class="container">
+  <div class="center-block">
+    <h2>Interactive rear projection film</h2>
+    <div class="row">
+      <div style="padding: 15px;text-indent: 25px">
+        <p>
+          We offer interactive rear projection film (sensory and conventional) for indoor use (concert halls, conference halls, railway stations, commercial banks, etc.). These models are profitable and widely used to organize social advertising, emergency warning, traffic situations, repertory theaters and cinemas, the transmission of news administrations, as well as satellite video stream with high quality images.
+        </p>
+        <p>
+          Interactive rear projection film fits into the urban infrastructure and interiors mall, exhibition centers, railway stations and airports. They allow you to broadcast video and promptly update the broadcast media content, which distinguishes them from other types of advertising.
+        </p>
+        <br><br>
+        <div style="margin-left:-50px;text-align: center;text-indent: 0">
+          <% @videos.each do |video| %>
+              <div style="display: inline-block">
+                <iframe width="450" height="300" src="http://www.youtube.com/embed/<%= video %>?rel=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+          <% end %>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>

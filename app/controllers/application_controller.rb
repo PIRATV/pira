@@ -6,6 +6,9 @@ class ApplicationController < ActionController::Base
   helper :all
   #filter_parameter_logging :password, :password_confirmation
 
+  before_filter :set_language
+  before_action :set_layout
+
   theme :theme_resolver
 
   rescue_from ActiveRecord::RecordNotFound, with: :page_not_found
@@ -41,77 +44,16 @@ class ApplicationController < ActionController::Base
     session[:return_to] = nil
   end
 
-  def self.production
-    {
-        'Светодиодные_экраны' => {
-            name: 'led_screens',
-            title: 'Светодиодные экраны',
-            types: {
-                'ready-made' => 'Экраны «готовые решения»',
-                'video-cityboard' => 'Видео-ситиборды',
-                'video-cityformat' => 'Видео-ситиформаты',
-                'video-fencing' => 'Видео-ограждения',
-                'video-pillar' => 'Видео-пиллары',
-                'videoboard' => 'Видеовывески',
-                'fasad' => 'Фасадные решения',
-                'interior' => 'Интерьерные экраны',
-                'mediafacade' => 'Медиафасады',
-                'big-screens' => 'Экраны «под ключ»',
-                'arena' => 'Экраны-арена',
-                'videodisplay' => 'Видеодисплей',
-                'floor' => 'Напольные светодиодные экраны',
-            }
-        },
-        'Рекламные_конструкции' => {
-            name: 'advertisment',
-            title: 'Рекламные конструкции',
-            types: {
-                'cityboard' => 'Ситиборды 2,7 × 3,7м',
-                'flexboard' => 'Флексборды 2,7×3,7м',
-                'scrollers_23x43' => 'Скроллеры 2,3 × 4,3 м',
-                'scrollers_2x3' => 'Скроллеры 2 × 3 м',
-                'billboards' => 'Рекламные щиты, билборды',
-                'scrollers' => 'Роллерные дисплеи, скроллеры',
-                'pillars' => 'Пиллары',
-                'citybox' => 'Сити-боксы',
-                'city-format' => 'Сити-форматы',
-                'infostands' => 'Информационные стенды',
-                'horeca' => 'ХоРеКа, панель-кронштейн',
-                'light_fencing' => 'Световые рекламные ограждения',
-                'scroller-arena' => 'Скроллеры «Арена»',
-                'lightbox' => 'Световые короба, лайтбоксы',
-                '3d_letters' => 'Объемные буквы'
-            }
-        },
-        'Системы-конструкторы' => {
-            name: 'diy',
-            title: 'Системы-конструкторы',
-            types: {
-                'dss' => 'Цифровые роллерные системы',
-                'busstop' => 'Остановочные павильоны',
-                'light_fencing' => 'Световые ограждения',
-                'flexboard' => 'Флексборд',
-                'lightbox' => 'Световые короба',
-                'cityformat' => 'Ситиформат',
-                'binbox' => 'Бинбокс',
-                'citybox' => 'Ситибокс',
-                'pillars' => 'Пиллары'
-            }
-        },
-        'Уличная_мебель' => {
-            name: 'street_furniture',
-            title: 'Уличная мебель',
-            types: {
-                'bench' => 'Рекламная скамейка',
-                'busstop' => 'Остановочные павильоны',
-                'binbox' => 'Рекламные урны, бин-боксы',
-                'phone_booth' => 'Многофункциональная кабина',
-                'beach_cabin' => 'Рекламная пляжная кабина',
-                'bike_parking' => 'Велопарковка с лайтбоксом',
-                'arbor' => 'Беседка рекламная'
-            }
-        }
-    }
+  def set_language
+    if session[:language].blank? or session[:language].to_sym != I18n.locale
+      session[:language] = 'ru' if session[:language].blank?
+      session[:language] = (['ru', 'en'].include? session[:language]) ? session[:language] : 'ru'
+      I18n.locale =  session[:language].to_sym
+    end
+  end
+
+  def set_layout
+    layout = "#{I18n.locale}/#{layout}"
   end
 
 end

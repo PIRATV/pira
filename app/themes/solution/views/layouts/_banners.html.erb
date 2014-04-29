@@ -2,7 +2,7 @@
 
   <div class="slider-inner">
     <div id="da-slider" class="da-slider">
-      <% Hash.from_xml(File.read("#{theme_path}views/xml/banners.xml"))['banners']['banner'].each do |banner| %>
+      <% Hash.from_xml(File.read("#{theme_path}views/xml/banners.#{locale}.xml"))['banners']['banner'].each do |banner| %>
           <div class="da-slide">
             <h2><%= bbcodes(banner['title']).html_safe %></h2>
             <p>

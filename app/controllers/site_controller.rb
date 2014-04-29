@@ -2,7 +2,7 @@ class SiteController < ApplicationController
 
   include ApplicationHelper
 
-  add_breadcrumb I18n.t('Home'), :root_path
+  before_action { add_breadcrumb I18n.t('Home'), :root_path }
   def index
   end
 
@@ -54,5 +54,10 @@ class SiteController < ApplicationController
     @productions = ProductionCategory.all
     @category = params[:category] || 'Светодиодные_экраны'
     add_breadcrumb(@category.sub '_', ' ')
+  end
+  def language
+    session[:language] = params[:language][0..1]
+    set_language
+    redirect_back_or_to root_path
   end
 end

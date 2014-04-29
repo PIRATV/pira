@@ -1,0 +1,33 @@
+<% content_for :production do %>
+    <%= stylesheet_link_tag 'solution/production', 'data-turbolinks-track' => true %>
+<% end %>
+
+<% content_for :title, "Продукция - #{@category}" %>
+
+<div class="production">
+
+  <br id="led_screens"/>
+  <br id="advertising_design"/>
+  <br id="diy"/>
+  <br id="street_furniture"/>
+
+  <% ['Светодиодные_экраны', 'Рекламные_конструкции', 'Системы-конструкторы', 'Уличная_мебель'].each do |category| %>
+      <% url = create_url(t('Production'), category) %>
+      <h3>
+        <%= link_to category.sub('_', ' '), url, class: "hover-effect#{' active' if @category == category}" %>
+      </h3>
+  <% end %>
+
+  <% {1=>'Светодиодные_экраны',2=>'Рекламные_конструкции',3=>'Системы-конструкторы',4=>'Уличная_мебель'}.each do |i, category| %>
+      <div<%= ' class=current' if category == @category %>>
+      <ul class="production_item">
+        <% @productions.each do |production| %>
+            <% next if production.parent_id != i %>
+            <li><%= link_to production.category, create_url(t('Production'), @category, production.category_url) %></li>
+        <% end %>
+      </ul>
+      </div>
+  <% end %>
+  </div>
+
+<%= render 'production_table' %>
