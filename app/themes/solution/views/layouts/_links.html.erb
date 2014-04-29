@@ -7,11 +7,11 @@
         <% end %>
       </div>
       <div class="navbar-collapse collapse">
-        <%= link_to create_url('language', 'russian') do %>
-            <%= image_tag image_path('flag_russian.gif'), style: 'float:right;margin-right:5px' %>
+        <%= link_to create_url('language', 'russian'), alt: 'Русский язык', title: 'Русский язык' do %>
+            <%= image_tag image_path('flag_russian.gif'), style: 'float:right;margin-right:5px', alt: 'Русский язык' %>
         <% end %>
-        <%= link_to create_url('language', 'english') do %>
-            <%= image_tag image_path('flag_english.gif'), style: 'float:right;margin:5px' %>
+        <%= link_to create_url('language', 'english'), alt: 'English', title: 'English' do %>
+            <%= image_tag image_path('flag_english.gif'), style: 'float:right;margin:5px', alt: 'English' %>
         <% end %>
         <ul class="nav navbar-nav navbar-right">
           <li<%= check_active_page('index') %>><%= link_to t('Home'), root_path %></li>
