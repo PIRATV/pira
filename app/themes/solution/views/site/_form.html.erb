@@ -1,5 +1,5 @@
 <div class="col-lg-7">
-  <h3 style="text-align: center">Обратная связь</h3>
+  <h3 style="text-align: center"><%= t 'Feedback' %></h3>
   <%= simple_form_for @message, url: create_url(t('contact')), html: {class: 'form-horizontal', role: 'form'} do |f| %>
       <%= f.input :name, html: {width: '5px'} %>
       <%= f.input :subject %>

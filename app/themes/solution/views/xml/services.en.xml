@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+
+  <service>
+    <image>Plyonki.jpg</image>
+    <title>Rear projection film</title>
+    <url>Interactive_film</url>
+    <price></price>
+    <lists>
+      <list>Interactive rear projection film</list>
+      <list>Touch interactive rear projection film</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>content-info-3-159.jpg</image>
+    <title>LED-screens and tickers</title>
+    <url>Led_Screens</url>
+    <price></price>
+    <lists>
+      <list>Tickers (full color, monochrome)</list>
+      <list>LED board</list>
+      <list>LED-screens with high resolution for use both outdoors and indoors</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>banners/site-construction.png</image>
+    <title>Website Development</title>
+    <url>Sites</url>
+    <price></price>
+    <lists>
+      <list>Online Business Card</list>
+      <list>Base Site</list>
+      <list>Advanced Site</list>
+      <list>Business website</list>
+      <list>Online shop</list>
+      <list>Exclusive Site</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>tram.jpg</image>
+    <title>Branding of public transport</title>
+    <url></url>
+    <price></price>
+    <lists>
+      <list>Trams</list>
+      <list>Taxis</list>
+      <list>Cars</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>video.jpg</image>
+    <title>Advertising on public transport</title>
+    <url></url>
+    <price></price>
+    <lists>
+      <list>Advertising on TV</list>
+      <list>Video advertising on public transport</list>
+      <list>Advertising on radio</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>portfolio/light_boxes/_DSC0174.JPG</image>
+    <title>Outdoor Advertising</title>
+    <url></url>
+    <price></price>
+    <lists>
+      <list>Light Boxes</list>
+      <list>Volumetric Letters</list>
+      <list>Standers</list>
+      <list>Letters air</list>
+      <list>Banners</list>
+      <list>Large format printing</list>
+      <list>Interior printing</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>polygraphy.jpg</image>
+    <title>Polygraphy</title>
+    <url></url>
+    <price></price>
+    <lists>
+      <list>Business cards</list>
+      <list>Calendars</list>
+      <list>Fliers</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>portfolio/light_boxes/IMAG0689.jpg</image>
+    <title>LED Products</title>
+    <url></url>
+    <price></price>
+    <lists>
+      <list>LED Strip</list>
+      <list>Spot LED letters</list>
+    </lists>
+  </service>
+
+  <service>
+    <image>frezer.jpg</image>
+    <title>Milling and engraving work</title>
+    <url>Milling_works</url>
+    <price></price>
+    <lists>
+      <list>Milling</list>
+      <list>Chamfer</list>
+      <list>Etching</list>
+    </lists>
+  </service>
+
+</services>

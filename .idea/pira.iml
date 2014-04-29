@@ -188,6 +188,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.3.1, RVM: ruby-2.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v4.1.1, RVM: ruby-2.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="remotipart (v1.2.1, RVM: ruby-2.1.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="route_downcaser (v0.2.1, RVM: ruby-2.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="safe_yaml (v1.0.3, RVM: ruby-2.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.2.19, RVM: ruby-2.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v4.0.3, RVM: ruby-2.1.0) [gem]" level="application" />

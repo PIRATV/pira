@@ -1,0 +1,70 @@
+<% content_for :title, 'Фрезерные работы' %>
+<div class="container">
+  <div class="center-block">
+    <h2>Work on the milling machine</h2>
+
+    <div class="row">
+      <div style="padding: 15px; margin: 10px">
+        <div>
+          We offer the performance of work on a milling machine. Drawing patterns of any complexity in almost any material.
+
+          <ul>Some of the materials that can be used:
+            <li>rigid plastics (PMMA-PC-PS-PVC-ABS, etc.);</li>
+            <li>tough foam (PU-PS, etc.);</li>
+            <li>composite materials for construction and production;</li>
+            <li>wood and products of wood;</li>
+            <li>textolite;</li>
+            <li>non-ferrous metals and alloys based on copper and aluminum;</li>
+            <li>Steel and stainless steel.</li>
+          </ul>
+        </div>
+        <div>
+          Prices for milling and engraving work:<br>
+<pre style="width: 700px;text-align: justify">
+<b>    Name                   Material                  Thickness       Cost </b>
+    Milling                PVC                       1-8 mm          40 rub./rm
+    Milling                PVC                       10 mm           50 rub./rm
+    Milling                Plexiglas                 1-8 mm          40 rub./rm
+    Milling                Plexiglas                 10-15 mm        50 rub./rm
+    Milling                Plexiglas                 15-20 mm        120 rub./rm
+    Milling                Composite                 2-4 mm          40 rub./rm
+    Chamfer                Composite                 1,5-4 mm        40 rub./rm
+    Milling                Graflux, Metzoplast       1,5-3 mm        40 rub./rm
+    Etching                Plexiglas                                 30 rub./rm
+    Etching                Composite, Graflux                        20 rub./rm
+    File preparation                                                 от 100 руб.
+</pre>
+        </div>
+        <br>
+
+        <div style="margin-left:50px">
+          Prices are in rubles, including VAT, rm - meter passage cutter.<br>
+
+          <div>
+            <ul>All prices are given:
+              <li>without the cost of material;</li>
+              <li>for urgent orders introduced a factor of 2;</li>
+              <li>cost of milling operations on metals is calculated individually;</li>
+              <li>scope of work for more than 150 rm cutting provide discounts;</li>
+            </ul>
+          </div>
+          <br>
+          Files must be submitted in vector form, in the format *.cdr, vinyl, at 1:1
+        </div>
+      </div>
+    </div>
+    <div class="milling_images">
+      <% i = 0; @images.each do |image| %>
+          <%= link_to image_path("milling/#{image}.jpg"), rel: 'prettyPhoto[]' do %>
+              <%= image_tag image_path("milling/#{image}.jpg"), alt: '' %>
+          <% end %>
+          <% if (i += 1) == 3 %>
+              </div>
+              <div class="milling_images">
+          <% end %>
+      <% end %>
+      </div>
+      </div>
+  <br>
+  <br>
+</div>

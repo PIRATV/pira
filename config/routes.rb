@@ -1,11 +1,17 @@
 Pira::Application.routes.draw do
 
+
   resources :user_sessions
   resources :users, only: [:new, :create, :update, :destroy]
 
+  #english urls
+  get '/language/:language', to: 'site#language'
+  get '/:action', to: 'site#:action', constraints: {action: /contact|work|services|production/i}
+  get '/portfolio', to: 'site#albums'
   get 'login' => 'user_sessions#new', as: :login
   match 'logout' => 'user_sessions#destroy', as: :logout, via: [:get, :post]
 
+  #russian
   get '/Продукция/:category',constraints:{
       category: /[-_%a-z0-9]+/iu
   },to: 'site#production'
@@ -15,13 +21,21 @@ Pira::Application.routes.draw do
       type: /[-_%a-z0-9]+/iu
   },to: 'production#show'
 
+  #english
+  get '/production/:category',constraints:{
+      category: /[-_%a-z0-9]+/iu
+  },to: 'site#production'
+
+  get '/production/:category/:type',constraints:{
+      category: /[-_%a-z0-9]+/iu,
+      type: /[-_%a-z0-9]+/iu
+  },to: 'production#show'
+
   mount Ckeditor::Engine => '/ckeditor'
   mount RailsAdmin::Engine => '/administration', as: 'rails_admin'
 
   root 'site#index'
 
-  #english urls
-  get '/:action', to: 'site#:action', constraints: {action: /contact|work|services|albums|production/i}
   #russian urls
   get '/Контакты', to: 'site#contact', as: :contact
   get '/Вакансии', to: 'site#work', as: :job
@@ -29,14 +43,21 @@ Pira::Application.routes.draw do
   get '/Продукция', to: 'site#production', as: :production
   get '/Портфолио', to: 'site#albums', as: :albums
   get '/Портфолио/:album', to: 'site#portfolio', album: /[-_a-z0-9а-яё%]+/i, as: :portfolios
+  get '/portfolio/:album', to: 'site#portfolio', album: /[-_a-z0-9а-яё%]+/i
   #send form
   post '/contact', to: 'site#send_email_form'
-  post '/Контакты', to: 'site#send_email_form'
+  post '/(?:Contact|Контакты)', to: 'site#send_email_form'
 
+  #russian
   get '/Экраны', to: 'services#led'
   get '/Сайты', to: 'services#sites'
   get '/Работа_на_фрезере', to: 'services#milling'
   get '/Интерактивная_пленка', to: 'services#proj_film'
+  #english
+  get '/interactive_film', to: 'services#proj_film'
+  get '/milling_works', to: 'services#milling'
+  get '/sites', to: 'services#sites'
+  get '/led_screens', to: 'services#led'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

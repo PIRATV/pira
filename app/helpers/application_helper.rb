@@ -1,6 +1,6 @@
 module ApplicationHelper
   def app_name
-    'Рекламно-Информационная Компания ПИРА'
+    I18n.t 'Advertising Information Company PIRA'
   end
   def page_title title=nil
     return app_name if title.nil? or title.empty?

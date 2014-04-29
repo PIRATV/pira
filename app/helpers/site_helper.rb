@@ -1,7 +1,7 @@
 module SiteHelper
   require 'uri'
   def check_active_page action
-    return ' class=active' if action_name == action or request.fullpath.include? action or URI.decode_www_form_component(request.fullpath).include? action
+    return ' class=active' if action_name.downcase == action.downcase or request.fullpath.include? action.downcase or URI.decode_www_form_component(request.fullpath).include? action.downcase
     nil
   end
 

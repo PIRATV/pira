@@ -1,7 +1,7 @@
-<% content_for :title, 'Портфолио' %>
+<% content_for :title, t('Portfolio') %>
 
 <% if @albums.empty? %>
-    В настоящий момент сервер недоступен. Приносим извинения за причиненные неудобства
+    <%= t 'Currently the server is unavailable. We apologize for any inconvenience' %>
 <% else %>
     <div class="container">
       <div class="row">
