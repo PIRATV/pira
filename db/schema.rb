@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140424091845) do
+ActiveRecord::Schema.define(version: 20140430081914) do
 
   create_table "albums", primary_key: "album_id", force: true do |t|
     t.string   "album_name",   default: ""
@@ -21,9 +21,11 @@ ActiveRecord::Schema.define(version: 20140424091845) do
     t.boolean  "album_status", default: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "en_album_url"
   end
 
   add_index "albums", ["album_status"], name: "index_albums_on_album_status", using: :btree
+  add_index "albums", ["en_album_url"], name: "index_albums_on_en_album_url", unique: true, using: :btree
 
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false

@@ -1,9 +1,9 @@
 jQuery ->
   $(window).on 'ajaxComplete', ->
     $('.portfolio_image').gpGallery('a')
-    $("a[rel^='prettyPhoto']").prettyPhoto({theme: 'facebook', slideshow: 10000, autoplay_slideshow: true, deeplinking:false})
+    $("a[rel^='prettyPhoto']").prettyPhoto({theme: 'pp_default', slideshow: 10000, autoplay_slideshow: true, deeplinking:false})
   $('.portfolio_image').gpGallery('a')
-  $("a[rel^='prettyPhoto']").prettyPhoto({theme: 'facebook', slideshow: 10000, autoplay_slideshow: true, deeplinking:false})
+  $("a[rel^='prettyPhoto']").prettyPhoto({theme: 'pp_default', slideshow: 10000, autoplay_slideshow: true, deeplinking:false})
   $('#portfolios').infinitescroll
     navSelector: 'nav.pagination' # selector for the paged navigation (it will be hidden)
     nextSelector: 'nav.pagination a[rel=next]' # selector for the NEXT link (to page 2)

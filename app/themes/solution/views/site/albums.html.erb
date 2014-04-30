@@ -8,16 +8,20 @@
         <% i = 0 %>
         <% @albums.each do |album| %>
             <div class="col-md-4">
-              <% url = album.album_url.empty? ? album.album_id : album.album_url %>
+              <% if locale == :ru %>
+                <% url = album.album_url.blank? ? album.album_id : album.album_url %>
+              <% else %>
+                  <% url = album.en_album_url.blank? ? album.album_id : album.en_album_url %>
+              <% end %>
               <p>
                 <%= link_to create_url(t('Portfolio'), url) do %>
-                  <h3><%= album.album_name %></h3>
+                  <h3><%= t album.album_name %></h3>
                   <% if not album.album_image.empty? and img_exists?(album.album_image) %>
                       <div class="album_image">
                         <%= image_tag(album.album_image, title: album.album_title, alt: album.album_title) %>
                       </div>
                   <% end %>
-                  <%= album.album_title %>
+                  <%= "#{album.album_title}" %>
                   <% i += 1; if i == 3 %>
                       <% i = 0 %>
                       </div>
