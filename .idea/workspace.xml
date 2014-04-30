@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="portfolio.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/themes/solution/views/site/portfolio.html.erb">
+      <file leaf-file-name="site_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="48" selection-start="986" selection-end="986" vertical-scroll-proportion="0.81546575" vertical-offset="31" max-vertical-offset="600">
+            <state line="51" column="44" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.4940978" vertical-offset="472" max-vertical-offset="1155">
               <folding />
             </state>
           </provider>
@@ -88,11 +88,11 @@
         <option value="$PROJECT_DIR$/app/themes/solution/views/site/_contact_info.en.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/services/videocamers.en.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/site_controller.rb" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/site/camcorders.html.erb" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/xml/services.ru.xml" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/site/_portfolio.html.erb" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/site/portfolio.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/site_controller.rb" />
       </list>
     </option>
   </component>
@@ -1083,13 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="34" selection-start="1899" selection-end="1930" vertical-scroll-proportion="0.8229342" vertical-offset="307" max-vertical-offset="7050">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/ru.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="35" selection-start="1953" selection-end="1986" vertical-scroll-proportion="0.63237774" vertical-offset="405" max-vertical-offset="7725">
@@ -1142,13 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1542" selection-end="1542" vertical-scroll-proportion="0.54468805" vertical-offset="502" max-vertical-offset="1155">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="104" selection-start="283" selection-end="293" vertical-scroll-proportion="0.20236088" vertical-offset="0" max-vertical-offset="1845">
@@ -1163,9 +1149,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="34" selection-start="1899" selection-end="1930" vertical-scroll-proportion="0.8229342" vertical-offset="307" max-vertical-offset="7050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/themes/solution/views/site/portfolio.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="48" selection-start="986" selection-end="986" vertical-scroll-proportion="0.81546575" vertical-offset="31" max-vertical-offset="600">
+        <state line="22" column="17" selection-start="758" selection-end="758" vertical-scroll-proportion="0.5799649" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="44" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.4940978" vertical-offset="472" max-vertical-offset="1155">
           <folding />
         </state>
       </provider>

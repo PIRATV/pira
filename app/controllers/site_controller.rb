@@ -49,7 +49,7 @@ class SiteController < ApplicationController
     #)
 
     add_breadcrumb I18n.t('Portfolio'), create_url(I18n.t 'Portfolio')
-    add_breadcrumb @album.album_name, create_url(I18n.locale == :ru ? @album.album_url : @album.en_album_url)
+    add_breadcrumb I18n.t(@album.album_name), create_url(I18n.locale == :ru ? @album.album_url : @album.en_album_url)
   end
 
   def camcorders
