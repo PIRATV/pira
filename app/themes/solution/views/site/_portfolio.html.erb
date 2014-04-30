@@ -4,7 +4,7 @@
 
   <% if img_exists?(url) %>
 
-    <% link_url = image_path(url) %>
+    <% link_url = unit.video_url.blank? ? image_path(url) : unit.video_url %>
 
     <span class="image">
       <%= link_to link_url, rel: 'prettyPhoto[gallery]', title: unit.title do %>

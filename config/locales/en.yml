@@ -39,6 +39,16 @@ en:
   'If you are sure that the address is spelled correctly, contact the board administrator': 'If you are sure that the address is spelled correctly, contact the board administrator'
   "The page you were looking for doesn't exist (404 Not Found)": "The page you were looking for doesn't exist (404 Not Found)"
 
+  #portfolio
+  Баннеры: 'Banners'
+  Световые коробы: 'Light boxes'
+  Led продукция: 'Led products'
+  Объемные буквы: 'Volume letters'
+  Точечные светодиодные буквы: 'Dot Led letters'
+  Уголок потребителя: 'Area Consumer'
+  Фрезерные работы: 'Milling works'
+  'Разработка и установка баннеров': 'Development and installation of banners'
+
   will_paginate:
     previous_label: '«'
     next_label: '»'

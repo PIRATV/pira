@@ -6,7 +6,7 @@ Pira::Application.routes.draw do
 
   #english urls
   get '/language/:language', to: 'site#language'
-  get '/:action', to: 'site#:action', constraints: {action: /contact|work|services|production/i}
+  get '/:action', to: 'site#:action', constraints: {action: /contact|work|services|production|camcorders/i}
   get '/portfolio', to: 'site#albums'
   get 'login' => 'user_sessions#new', as: :login
   match 'logout' => 'user_sessions#destroy', as: :logout, via: [:get, :post]

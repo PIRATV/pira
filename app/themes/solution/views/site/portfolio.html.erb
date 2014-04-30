@@ -1,11 +1,11 @@
-<% i = 0; content_for :title, 'Портфолио - ' + @album.album_name %>
+<% i = 0; content_for :title, "#{t 'Portfolio'} - #{t @album.album_name}" %>
 <% if @portfolios.empty? %>
 
     <%= t 'Фотографий в данном альбоме еще не добавили..' %>
 
 <% else %>
 
-    <h2 style="text-align: center;text-transform: uppercase"><%= @album.album_name %></h2>
+    <h2 style="text-align: center;text-transform: uppercase"><%= t @album.album_name %></h2>
 
     <% content_for :portfolio do %>
         <%= javascript_include_tag 'solution/portfolio/application', 'data-turbolinks-track' => true %>

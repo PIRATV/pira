@@ -34,7 +34,11 @@ class SiteController < ApplicationController
   end
 
   def portfolio
-    @album = (Album.find_by_album_url params[:album]) || (Album.find_by_album_id params[:album])
+    if I18n.locale == :ru
+      @album = (Album.find_by_album_url params[:album]) || (Album.find_by_album_id params[:album])
+    else
+      @album = (Album.find_by_en_album_url params[:album]) || (Album.find_by_album_id params[:album])
+    end
     raise ActiveRecord::RecordNotFound if @album.nil?
 
     @portfolios = Portfolio.where(
@@ -45,7 +49,11 @@ class SiteController < ApplicationController
     #)
 
     add_breadcrumb I18n.t('Portfolio'), create_url(I18n.t 'Portfolio')
-    add_breadcrumb @album.album_name, create_url(@album.album_url)
+    add_breadcrumb @album.album_name, create_url(I18n.locale == :ru ? @album.album_url : @album.en_album_url)
+  end
+
+  def camcorders
+
   end
 
   def production
