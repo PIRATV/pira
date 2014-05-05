@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
-  revision: 663760e67b80ee25adc293bf5f03debae28b5af9
+  revision: 95de3b0e288aede73d38a18cce30cde66e733558
   specs:
     twitter-bootstrap-rails (2.2.8)
       actionpack (>= 3.1)
@@ -58,13 +58,14 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    dynamic_sitemaps (2.0.0)
     erubis (2.7.0)
     execjs (2.0.2)
     faker (1.1.2)
       i18n (~> 0.5)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
-    font-awesome-rails (4.0.3.1)
+    font-awesome-rails (4.0.3.2)
       railties (>= 3.2, < 5.0)
     haml (4.0.5)
       tilt
@@ -97,7 +98,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (4.7.5)
-    multi_json (1.9.2)
+    multi_json (1.9.3)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     mysql2 (0.3.15)
@@ -229,6 +230,7 @@ DEPENDENCIES
   cancan
   ckeditor
   coffee-rails (~> 4.0.0)
+  dynamic_sitemaps
   faker (= 1.1.2)
   jbuilder (~> 1.2)
   jquery-rails
