@@ -57,5 +57,7 @@ gem 'unicorn'
 
 gem 'nokogiri', '1.5.5'
 
+gem 'dynamic_sitemaps'
+
 gem 'rails_12factor', group: :production
 ruby '2.1.0'

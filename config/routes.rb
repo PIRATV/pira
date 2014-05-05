@@ -24,7 +24,7 @@ Pira::Application.routes.draw do
   #english
   get '/production/:category',constraints:{
       category: /[-_%a-z0-9]+/iu
-  },to: 'site#production'
+  },to: 'site#production', as: :production_category
 
   get '/production/:category/:type',constraints:{
       category: /[-_%a-z0-9]+/iu,
