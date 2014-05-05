@@ -7,7 +7,10 @@ sitemap :site do
   url "#{root_url}#{I18n.t 'Portfolio'}.html", last_mod: Time.now, change_freq: "daily", priority: 1.0
   url "#{root_url}#{I18n.t 'Contact'}.html", last_mod: Time.now, change_freq: "daily", priority: 1.0
   url "#{root_url}#{I18n.t 'Production'}.html", last_mod: Time.now, change_freq: "daily", priority: 1.0
-  url "#{root_url}#{I18n.t 'Job'}.html", last_mod: Time.now, change_freq: "daily", priority: 1.0
+  url "#{root_url}Интерактивная_пленка.html", last_mod: Time.now, change_freq: "daily", priority: 1.0
+  url "#{root_url}Работа_на_фрезере.html", last_mod: Time.now, change_freq: "daily", priority: 1.0
+  url "#{root_url}Сайты.html", last_mod: Time.now, change_freq: "daily", priority: 1.0
+  url "#{root_url}Экраны.html", last_mod: Time.now, change_freq: "daily", priority: 1.0
   url 'http://china.piratv.ru', last_mod: Time.now, change_freq: "daily", priority: 1.0
 end
 
