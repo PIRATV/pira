@@ -41,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sitemap.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sitemap.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/sitemap.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="24" selection-start="865" selection-end="865" vertical-scroll-proportion="0.3035413" vertical-offset="0" max-vertical-offset="975">
+            <state line="12" column="24" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -54,6 +54,15 @@
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="51" column="14" selection-start="1707" selection-end="1713" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1845">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="robots.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/robots.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="46" selection-start="143" selection-end="143" vertical-scroll-proportion="0.12647554" vertical-offset="0" max-vertical-offset="593">
               <folding />
             </state>
           </provider>
@@ -118,8 +127,8 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/public/robots.txt" />
         <option value="$PROJECT_DIR$/config/sitemap.rb" />
+        <option value="$PROJECT_DIR$/public/robots.txt" />
       </list>
     </option>
   </component>
@@ -862,13 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/robots.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="46" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="25" selection-start="969" selection-end="978" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1410">
@@ -890,6 +892,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/sitemap.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="24" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="14" selection-start="1707" selection-end="1713" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1845">
@@ -897,9 +906,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/sitemap.rb">
+    <entry file="file://$PROJECT_DIR$/public/robots.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="865" selection-end="865" vertical-scroll-proportion="0.3035413" vertical-offset="0" max-vertical-offset="975">
+        <state line="5" column="46" selection-start="143" selection-end="143" vertical-scroll-proportion="0.12647554" vertical-offset="0" max-vertical-offset="593">
           <folding />
         </state>
       </provider>
