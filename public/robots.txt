@@ -4,4 +4,3 @@ Sitemap: http://piratv.ru/sitemaps/sitemap.xml
 User-agent: Yandex
 Host: piratv.ru
 Sitemap: http://piratv.ru/sitemaps/sitemap.xml
-Clean-param: sid /index.php
