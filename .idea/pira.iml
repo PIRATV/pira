@@ -205,7 +205,7 @@
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.4.1, RVM: ruby-2.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.15, RVM: ruby-2.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbolinks (v2.2.2, RVM: ruby-2.1.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="twitter-bootstrap-rails (v2.2.8@663760, RVM: ruby-2.1.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="twitter-bootstrap-rails (v2.2.8@95de3b, RVM: ruby-2.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.39, RVM: ruby-2.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.5.0, RVM: ruby-2.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicorn (v4.8.2, RVM: ruby-2.1.0) [gem]" level="application" />
