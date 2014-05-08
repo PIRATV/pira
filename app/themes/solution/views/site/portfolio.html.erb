@@ -1,4 +1,4 @@
-<% i = 0; content_for :title, "#{t 'Portfolio'} - #{t @album.album_name}" %>
+<% i = 0; content_for :title, "#{t 'Portfolio'} - #{t @album.album_name.gsub('-', ' ')}" %>
 <% if @portfolios.empty? %>
 
     <%= t 'Фотографий в данном альбоме еще не добавили..' %>
