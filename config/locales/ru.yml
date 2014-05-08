@@ -1,5 +1,4 @@
 ru:
-  thanks: 'Благодарности'
   Advertising Information Company PIRA: 'Рекламно-Информационная Компания ПИРА'
   Contact info: 'Контактная информация'
   Currently the server is unavailable. We apologize for any inconvenience: 'В настоящий момент сервер недоступен. Приносим извинения за причиненные неудобства'
@@ -31,6 +30,7 @@ ru:
   #links
   services: 'Услуги'
   contact: 'Контакты'
+  thanks: 'Благодарности'
   work: 'Вакансии'
   portfolio: 'Портфолио'
   production: 'Продукция'
