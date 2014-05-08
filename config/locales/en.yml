@@ -1,5 +1,4 @@
 en:
-  thanks: 'Thanks'
   Advertising Information Company PIRA: 'Advertising Information Company PIRA'
   Contact info: 'Contact information'
   Currently the server is unavailable. We apologize for any inconvenience: 'Currently the server is unavailable. We apologize for any inconvenience'
@@ -30,6 +29,7 @@ en:
   'Download price': 'Download price'
   #links
   services: 'Services'
+  thanks: 'Thanks'
   contact: 'Contact'
   work: 'Work'
   portfolio: 'Portfolio'
