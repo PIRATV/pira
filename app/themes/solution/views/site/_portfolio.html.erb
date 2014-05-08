@@ -2,9 +2,9 @@
 
   <% url = unit.photo_url.starts_with?('http://') ? unit.photo_url : 'portfolio/' + unit.photo_url %>
 
-  <% if img_exists?(url) %>
+  <% if img_exists?(url) or url.start_with?('http://') %>
 
-    <% link_url = unit.video_url.blank? ? image_path(url) : unit.video_url %>
+    <% link_url = unit.video_url.blank? ? image_path(url) : "http://www.youtube.com/watch?v=#{unit.video_url}" %>
 
     <span class="image">
       <%= link_to link_url, rel: 'prettyPhoto[gallery]', title: unit.title do %>
