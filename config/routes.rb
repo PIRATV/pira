@@ -6,7 +6,7 @@ Pira::Application.routes.draw do
 
   #english urls
   get '/language/:language', to: 'site#language'
-  get '/:action', to: 'site#:action', constraints: {action: /contact|work|services|production|camcorders/i}
+  get '/:action', to: 'site#:action', constraints: {action: /contact|work|services|production|camcorders|thanks/i}
   get '/portfolio', to: 'site#albums'
   get 'login' => 'user_sessions#new', as: :login
   match 'logout' => 'user_sessions#destroy', as: :logout, via: [:get, :post]
@@ -37,6 +37,7 @@ Pira::Application.routes.draw do
   root 'site#index'
 
   #russian urls
+  get '/Благодарности', to: 'site#thanks', as: :thanks
   get '/Контакты', to: 'site#contact', as: :contact
   get '/Вакансии', to: 'site#work', as: :job
   get '/Услуги', to: 'site#services', as: :services
