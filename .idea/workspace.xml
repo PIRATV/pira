@@ -23,10 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="portfolio.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="portfolio.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/themes/solution/views/site/portfolio.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="92" selection-start="287" selection-end="287" vertical-scroll-proportion="0.18453427" vertical-offset="0" max-vertical-offset="600">
+            <state line="7" column="92" selection-start="287" selection-end="287" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="600">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ru.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/locales/ru.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="5" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.68296796" vertical-offset="315" max-vertical-offset="7740">
               <folding />
             </state>
           </provider>
@@ -91,8 +100,8 @@
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/site/_portfolio.html.erb" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
-        <option value="$PROJECT_DIR$/config/locales/ru.yml" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/site/portfolio.html.erb" />
+        <option value="$PROJECT_DIR$/config/locales/ru.yml" />
       </list>
     </option>
   </component>
@@ -951,13 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/ru.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="25" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.8347386" vertical-offset="0" max-vertical-offset="7740">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="18" selection-start="996" selection-end="996" vertical-scroll-proportion="0.8347386" vertical-offset="0" max-vertical-offset="7050">
@@ -988,7 +990,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/themes/solution/views/site/portfolio.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="92" selection-start="287" selection-end="287" vertical-scroll-proportion="0.18453427" vertical-offset="0" max-vertical-offset="600">
+        <state line="7" column="92" selection-start="287" selection-end="287" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/ru.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="5" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.68296796" vertical-offset="315" max-vertical-offset="7740">
           <folding />
         </state>
       </provider>
