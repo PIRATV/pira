@@ -43,7 +43,7 @@ class SiteController < ApplicationController
 
     @portfolios = Portfolio.where(
         album_id: @album.album_id, status: true
-    ).page(params[:page])
+    ).order(id: :desc).page(params[:page])
     #).paginate(
     #    page: params[:page], per_page: 15
     #)
