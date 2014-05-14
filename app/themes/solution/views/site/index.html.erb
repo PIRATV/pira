@@ -3,6 +3,9 @@
     <div class="row">
       <%= render 'contact_info' %>
       <div class="col-md-4 align-right">
+        <%= link_to('http://china.piratv.ru', class: 'btn', title: 'Прямые поставки из Китая', target: '_blank') do %>
+          <%= image_tag image_path('china.png'), style: 'width:100px' %>
+        <% end %>
         <%= link_to t('Contact'), create_url(t 'Contact'), class: 'btn btn-brand' %>
         </p>
       </div>
