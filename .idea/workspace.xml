@@ -23,14 +23,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="site_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="site_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="21" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.153457" vertical-offset="584" max-vertical-offset="1200">
+            <state line="45" column="21" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="1200">
               <folding>
                 <element signature="e#418#451#0" expanded="true" />
                 <element signature="e#485#520#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/themes/solution/views/site/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="84" selection-start="449" selection-end="449" vertical-scroll-proportion="0.21089631" vertical-offset="0" max-vertical-offset="660">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,7 +68,6 @@
         <option value="$PROJECT_DIR$/app/themes/solution/views/site/_about.en.html.erb" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/site/contact_info.en.html.erb" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/site/contact_info.ru.html.erb" />
-        <option value="$PROJECT_DIR$/app/themes/solution/views/site/index.html.erb" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/site/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/xml/services.en.xml" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/services/proj_film.en.html.erb" />
@@ -72,7 +80,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20140430081914_add_en_album_url_to_albums.rb" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/site/albums.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/site_helper.rb" />
-        <option value="$PROJECT_DIR$/app/themes/solution/views/site/_contact_info.ru.html.erb" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/site/_contact_info.en.html.erb" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/services/videocamers.en.html.erb" />
         <option value="$PROJECT_DIR$/app/themes/solution/views/xml/services.ru.xml" />
@@ -96,6 +103,8 @@
         <option value="$PROJECT_DIR$/app/themes/solution/views/site/portfolio.html.erb" />
         <option value="$PROJECT_DIR$/config/locales/ru.yml" />
         <option value="$PROJECT_DIR$/app/controllers/site_controller.rb" />
+        <option value="$PROJECT_DIR$/app/themes/solution/views/site/_contact_info.ru.html.erb" />
+        <option value="$PROJECT_DIR$/app/themes/solution/views/site/index.html.erb" />
       </list>
     </option>
   </component>
@@ -131,6 +140,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -476,7 +486,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,6 +496,10 @@
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesSCSS" value="false" />
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
+    <property name="options.lastSelected" value="preferences.sourceCode.General" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -637,7 +650,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24924242" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2530303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -686,11 +699,6 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20140430081914_add_en_album_url_to_albums.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="50" selection-start="164" selection-end="164" vertical-scroll-proportion="0.075885326" vertical-offset="0" max-vertical-offset="593" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/themes/solution/views/site/_contact_info.ru.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="266" selection-end="269" vertical-scroll-proportion="0.19266056" vertical-offset="0" max-vertical-offset="545" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/themes/solution/views/site/_contact_info.en.html.erb">
@@ -751,11 +759,6 @@
     <entry file="file://$PROJECT_DIR$/config/sitemap.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="24" selection-start="865" selection-end="865" vertical-scroll-proportion="0.3035413" vertical-offset="0" max-vertical-offset="975" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/themes/solution/views/site/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="47" selection-start="202" selection-end="202" vertical-scroll-proportion="0.13181019" vertical-offset="0" max-vertical-offset="600" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/themes/solution/assets/stylesheets/solution/services.css.scss">
@@ -931,13 +934,27 @@
         <state line="7" column="92" selection-start="287" selection-end="287" vertical-scroll-proportion="0.18453427" vertical-offset="0" max-vertical-offset="600" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/themes/solution/views/site/_contact_info.ru.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="5" selection-start="266" selection-end="269" vertical-scroll-proportion="0.18453427" vertical-offset="0" max-vertical-offset="569">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="21" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.153457" vertical-offset="584" max-vertical-offset="1200">
+        <state line="45" column="21" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="1200">
           <folding>
             <element signature="e#418#451#0" expanded="true" />
             <element signature="e#485#520#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/themes/solution/views/site/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="84" selection-start="449" selection-end="449" vertical-scroll-proportion="0.21089631" vertical-offset="0" max-vertical-offset="660">
+          <folding />
         </state>
       </provider>
     </entry>
