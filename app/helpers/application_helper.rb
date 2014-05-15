@@ -38,4 +38,8 @@ module ApplicationHelper
   def img_exists? image
     File.exist?(image_path("#{Rails.root}/app/assets/images/#{image}"))
   end
+
+  def meta_tags
+
+  end
 end
