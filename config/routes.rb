@@ -47,9 +47,10 @@ Pira::Application.routes.draw do
   get '/portfolio/:album', to: 'site#portfolio', album: /[-_a-z0-9а-яё%]+/i
   #send form
   post '/contact', to: 'site#send_email_form'
-  post '/(?:Contact|Контакты)', to: 'site#send_email_form'
+  post '/Контакты', to: 'site#send_email_form'
 
   #russian
+  get '/Реклама_led', to: 'services#advert_led'
   get '/Экраны', to: 'services#led'
   get '/Сайты', to: 'services#sites'
   get '/Работа_на_фрезере', to: 'services#milling'
@@ -59,6 +60,7 @@ Pira::Application.routes.draw do
   get '/milling_works', to: 'services#milling'
   get '/sites', to: 'services#sites'
   get '/led_screens', to: 'services#led'
+  get '/advertisment_led', to: 'services#advert_led'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
