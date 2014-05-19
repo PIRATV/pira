@@ -11,7 +11,4 @@ describe 'Sites', :type => :request do
       assert page.body.include?('<meta name="description"')
     end
   end
-  describe 'GET /Продукция' do
-
-  end
 end
