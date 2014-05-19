@@ -21,6 +21,5 @@ class ServicesController < ApplicationController
   end
 
   def advert_led
-
   end
 end

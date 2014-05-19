@@ -2,14 +2,14 @@
 
 one:
   album_id: 1
-  photo_url: MyString
-  video_url: MyString
-  title: MyString
+  photo_url: album_1/image1.jpg
+  video_url:
+  title:
   status: 
 
 two:
   album_id: 1
-  photo_url: MyString
-  video_url: MyString
-  title: MyString
+  photo_url: album_2/image2.jpg
+  video_url:
+  title: Title for image
   status: 

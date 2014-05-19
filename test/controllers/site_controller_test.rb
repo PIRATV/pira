@@ -6,13 +6,13 @@ class SiteControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get contact" do
-    get :contact
-    assert_response :success
+  test 'should have meta tags' do
+    get :index
+    css_select 'meta', 'name="keywords"'
   end
 
-  test "should get about" do
-    get :about
+  test "should get contact" do
+    get :contact
     assert_response :success
   end
 
