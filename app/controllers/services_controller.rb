@@ -19,4 +19,8 @@ class ServicesController < ApplicationController
     add_breadcrumb I18n.t('ProjectionFilm')
     @videos = ['pds6i57ymHQ', 'bgIjqq2hal4', 'kRsD8bmAAqQ', 'xRKklpqkTB4']
   end
+
+  def advert_led
+
+  end
 end
