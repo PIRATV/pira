@@ -39,7 +39,13 @@ module ApplicationHelper
     File.exist?(image_path("#{Rails.root}/app/assets/images/#{image}"))
   end
 
-  def meta_tags
-
+  def meta_tags keywords, description
+    if keywords.blank? and description.blank?
+      tag(:meta, name: 'keywords', value: 'реклама, наружная реклама, Пятигорск, КМВ, СКФО, ЮФО, баннеры, световые коробы, led, строки, экраны, объемные буквы, визитки, флайеры, печать, пленка') +
+        "\n" +
+        tag(:meta, name: 'description', value: 'Пятигорская Информационно-Рекламная компания ПИРА - Изготовление и размещение всех видов наружной и внутренней рекламы в городах СКФО и ЮФО')
+    else
+      tag(:meta, name: 'keywords', value: keywords) + "\n" + tag(:meta, name: 'description', value: description)
+    end
   end
 end

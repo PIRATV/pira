@@ -17,6 +17,14 @@ gem 'pg', group: :production
 
 gem 'twitter-bootstrap-rails', git: 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+end
+group :test do
+  gem 'selenium-webdriver'
+  gem 'capybara'
+end
+
 group :assets do
   gem 'sass-rails', '~> 4.0.0'
   gem 'uglifier', '>= 1.3.0'
