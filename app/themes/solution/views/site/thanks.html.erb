@@ -4,7 +4,7 @@
     <h2 style="text-align: center"><%= t 'thanks' %></h2>
 
     <div class="row">
-      <div style="margin-left:-50px;text-align: center;text-indent: 0">
+      <div style="margin-left:-50px;text-align: center;text-indent: 0" id="thanks_list">
         <% Dir.glob("#{Rails.root}/app/assets/images/thanks/*").reverse.each do |path| %>
             <div style="display: inline-block">
               <%= link_to image_path(path.sub("#{Rails.root}/app/assets/images/", '')), rel: 'prettyPhoto[gallery]', title: '' do %>
