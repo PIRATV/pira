@@ -62,3 +62,13 @@ div.navbar-header {
   display: inline-block;
   margin-left: 1px;
 }
+
+#thanks_list {
+  div {
+    text-align: center;
+    margin: 15px;
+  }
+  img {
+    box-shadow: 0 0 7px rgba(0,0,100,0.5);
+  }
+}
