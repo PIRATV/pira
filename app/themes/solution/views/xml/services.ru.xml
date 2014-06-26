@@ -25,6 +25,18 @@
   </service>
 
   <service>
+    <image>/led-sales/0ade75c4d79f75f396d631787e44771c.JPG</image>
+    <title>Оптовая продажа комплектующих для бегущих строк и LED экранов</title>
+    <url>Led_sales</url>
+    <price></price>
+    <lists>
+      <list>Модули</list>
+      <list>Профиля</list>
+      <list>Светодиоды</list>
+    </lists>
+  </service>
+
+  <service>
     <image>camcorders/1966_1.jpg</image>
     <title>Продажа и установка видеокамер</title>
     <url>Camcorders</url>
