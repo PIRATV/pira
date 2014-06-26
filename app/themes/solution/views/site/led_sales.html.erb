@@ -1,0 +1,25 @@
+<% content_for :title, 'Продажа и установка видеокамер' %>
+<div class="container">
+  <div class="center-block">
+    <h2>Продажа и установка видеокамер</h2>
+    <div class="row">
+      <div style="padding: 15px;text-indent: 25px">
+        <p>
+            Оптовая и розничная продажа видеокамер и их установка
+        </p>
+        <p>
+
+        </p>
+        <br><br>
+        <div style="margin-left:-50px;text-align: center;text-indent: 0">
+          <% Dir.glob("#{Rails.root}/app/assets/images/camcorders/*").each do |path| %>
+              <div style="display: inline-block">
+                <%= image_tag image_path(path.sub("#{Rails.root}/app/assets/images/", '')), style: 'max-width:300px' %>
+              </div>
+          <% end %>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
