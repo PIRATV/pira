@@ -25,7 +25,7 @@
   </service>
 
   <service>
-    <image>/led-sales/0ade75c4d79f75f396d631787e44771c.JPG</image>
+    <image>led-sales/0ade75c4d79f75f396d631787e44771c.JPG</image>
     <title>Оптовая продажа комплектующих для бегущих строк и LED экранов</title>
     <url>Led_sales</url>
     <price></price>
