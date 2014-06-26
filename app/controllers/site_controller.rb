@@ -54,6 +54,8 @@ class SiteController < ApplicationController
 
   def camcorders
   end
+  def led_sales
+  end
 
   def thanks
     add_breadcrumb I18n.t('thanks'), create_url(I18n.t 'thanks')
