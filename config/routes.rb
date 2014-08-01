@@ -5,6 +5,7 @@ Pira::Application.routes.draw do
   resources :users, only: [:new, :create, :update, :destroy]
 
   #english urls
+  get '/led_sales', to: 'site#led_sales'
   get '/language/:language', to: 'site#language'
   get '/:action', to: 'site#:action', constraints: {action: /contact|work|services|production|camcorders|thanks/i}
   get '/portfolio', to: 'site#albums'
