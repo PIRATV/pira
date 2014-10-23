@@ -2,6 +2,18 @@
 <services>
 
   <service>
+    <image>gibdd_1.jpg</image>
+    <title>Спецзаказы</title>
+    <url>Спецзаказы</url>
+    <price></price>
+    <lists>
+      <list>Быстро</list>
+      <list>Качественно</list>
+      <list>Надежно</list>
+    </lists>
+  </service>
+
+  <service>
     <image>Plyonki.jpg</image>
     <title>Пленка обратной проекции</title>
     <url>Интерактивная_пленка</url>

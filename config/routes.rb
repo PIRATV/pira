@@ -56,8 +56,10 @@ Pira::Application.routes.draw do
   get '/Сайты', to: 'services#sites'
   get '/Работа_на_фрезере', to: 'services#milling'
   get '/Интерактивная_пленка', to: 'services#proj_film'
+  get '/Спецзаказы', to: 'services#special_orders'
   #english
   get '/interactive_film', to: 'services#proj_film'
+  get '/special_orders', to: 'services#special_orders'
   get '/milling_works', to: 'services#milling'
   get '/sites', to: 'services#sites'
   get '/led_screens', to: 'services#led'

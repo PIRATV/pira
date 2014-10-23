@@ -2,6 +2,18 @@
 <services>
 
   <service>
+    <image>gibdd_1.jpg</image>
+    <title>Special Orders</title>
+    <url>Special_orders</url>
+    <price></price>
+    <lists>
+      <list>Quickly</list>
+      <list>Qualitatively</list>
+      <list>Securely</list>
+    </lists>
+  </service>
+
+  <service>
     <image>Plyonki.jpg</image>
     <title>Rear projection film</title>
     <url>Interactive_film</url>

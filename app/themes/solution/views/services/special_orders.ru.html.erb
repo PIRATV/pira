@@ -1,0 +1,40 @@
+<% content_for :title, t('special_orders') %>
+<div class="container">
+  <div class="center-block">
+    <h2><%= t 'special_orders' %></h2>
+
+    <div class="row">
+      <div style="padding: 15px;text-indent: 25px; font-size: 16px">
+        <p>
+          Принимаем <b>любые</b> спецзаказы.
+        </p>
+        <p>Выполняем быстро, качественно и надежно.</p>
+
+        <p>
+          <b>Приглашаем к сотрудничеству!</b>
+        </p>
+        <br>
+        <p>
+          <h3 style="display: inline-block;margin-left: 240px">Заказ ГИБДД</h3>
+        </p>
+        <div style="margin-left:-50px;text-align: center;text-indent: 0">
+          <% @videos.each do |video| %>
+              <div style="display: inline-block">
+                <iframe width="450" height="300" src="http://www.youtube.com/embed/<%= video %>?rel=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+          <% end %>
+          <div class="milling_images">
+            <% @images.each do |image| %>
+                <%= link_to image_path("#{image}.jpg"), rel: 'prettyPhoto[]' do %>
+                    <%= image_tag image_path("#{image}.jpg"), alt: '', style: 'width: auto' %>
+                <% end %>
+            <% end %>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
