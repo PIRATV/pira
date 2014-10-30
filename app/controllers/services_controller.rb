@@ -22,7 +22,7 @@ class ServicesController < ApplicationController
 
   def special_orders
     @images = %w(gibdd_1 gibdd_2)
-    @videos = [] #unless video isn't uploaded
+    @videos = ['_tby6aBfVv4'] #unless video isn't uploaded
     add_breadcrumb I18n.t('special_orders')
   end
 
