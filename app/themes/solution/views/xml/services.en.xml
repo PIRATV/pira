@@ -2,6 +2,22 @@
 <services>
 
   <service>
+    <image>measures.jpg</image>
+    <title>Organizing and holding events: +7 928 3-155-175</title>
+    <url>Organizing_events</url>
+    <price></price>
+    <lists>
+      <list>Corporate parties</list>
+      <list>Seminars, conferences and negotiations</list>
+      <list>Fairs, exhibitions, carnivals, festivals</list>
+      <list>Children holidays, wedding turnkey</list>
+      <list>Decoration with balloons, flowers and fabrics</list>
+      <list>Catering, banquets, receptions</list>
+      <list>Furniture rental, car rental</list>
+    </lists>
+  </service>
+
+  <service>
     <image>gibdd_1.jpg</image>
     <title>Special Orders</title>
     <url>Special_orders</url>

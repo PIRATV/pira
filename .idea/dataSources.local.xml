@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails pira: development" uuid="e48e58c7-c74e-4383-b29e-ebe21845b4f8">
+      <secret-storage>memory</secret-storage>
+    </data-source>
+  </component>
+</project>

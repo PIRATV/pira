@@ -2,6 +2,22 @@
 <services>
 
   <service>
+    <image>measures.jpg</image>
+    <title>Организация и проведение мероприятий: +7 928 3-155-175</title>
+    <url>Мероприятия</url>
+    <price></price>
+    <lists>
+      <list>Корпоративы</list>
+      <list>Семинары, конференции, переговоры</list>
+      <list>Ярмарки, выставки, карнавалы, фестивали</list>
+      <list>Детские праздники, свадьбы "под ключ"</list>
+      <list>Оформление шарами, цветами и тканью</list>
+      <list>Кейтеринг, банкеты, фуршеты</list>
+      <list>Аренда мебели, прокат авто</list>
+    </lists>
+  </service>
+
+  <service>
     <image>gibdd_1.jpg</image>
     <title>Спецзаказы</title>
     <url>Спецзаказы</url>
